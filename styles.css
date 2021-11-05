@@ -1,0 +1,238 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-width: 1024px;
+}
+
+img {
+  height: 100%;
+}
+
+main {
+  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg)
+    50% 100% no-repeat;
+  background-size: 1440px 1315px;
+  height: 538px;
+  width: 100%;
+}
+
+aside > ul {
+  border-top: white solid 2px;
+  border-bottom: white solid 2px;
+  background: white;
+  display: flex;
+  gap: 2px;
+  padding: 0;
+  height: 200px;
+}
+
+li {
+  overflow: hidden;
+  flex: 1;
+  list-style: none;
+  position: relative;
+}
+
+li img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+footer {
+  height: 90px;
+  padding: 10px 0 26px 0;
+}
+
+footer .wrapper {
+  height: 100%;
+  margin: 0 auto;
+  width: 980px;
+
+  display: flex;
+}
+
+footer * {
+  font-size: 11px;
+  color: #6e6e6e;
+}
+
+footer a {
+  color: #08c;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.left-wrap,
+.right-wrap {
+  flex: 1;
+}
+
+.left-wrap > p,
+.right-wrap > * {
+  margin-top: 15px;
+}
+
+.left-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer nav {
+  align-items: flex-start;
+  display: flex;
+}
+
+footer nav * {
+  display: inline-block;
+}
+
+footer nav *:not(footer nav *:first-child):not(footer nav *:last-child),
+.left-border {
+  border-left: 1px solid grey;
+  padding-left: 6px;
+  margin-left: 6px;
+}
+
+footer nav *:nth-child(7) {
+  border-right: 1px solid grey;
+  padding-right: 6px;
+  margin-right: 6px;
+}
+
+footer nav *:last-child {
+  display: flex;
+  position: relative;
+  bottom: 1px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main > div {
+  width: 85%;
+  text-align: center;
+}
+
+main > div > h1 {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 200;
+}
+
+main > div > h2 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 200;
+}
+
+h1,
+h2 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+main > div > a {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+main > div > a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+nav.top {
+  height: 36px;
+  display: flex;
+  align-items: stretch;
+  line-height: 36px;
+  width: 980px;
+  margin: auto;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  box-shadow: rgb(0 0 0 / 30%) 0 1px 2px;
+  border-radius: 5px;
+}
+
+nav.top > div:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+nav.top > div:last-child {
+  border-radius: 0 5px 5px 0;
+  /* border-right: #535353 solid 1px; */
+}
+
+nav.top > div {
+  box-shadow: inset 0 0 3px #aaa;
+  background: linear-gradient(
+    #4a4a4a,
+    rgba(149, 140, 149, 1) 5%,
+    rgba(123, 123, 123, 1) 25%,
+    rgba(113, 113, 106, 1) 49%,
+    rgba(94, 94, 94, 1) 50%,
+    rgba(99, 99, 99, 1) 75%,
+    rgba(122, 122, 122, 1) 95%,
+    #4a4a4a
+  );
+  backdrop-filter: brightness(0%);
+}
+
+nav.top div {
+  height: 100%;
+}
+
+nav.top div svg {
+  height: 65%;
+}
+
+nav.top > div:hover {
+  backdrop-filter: brightness(60%);
+}
+
+nav.top > * {
+  flex: 1 1 0px;
+  text-align: center;
+  border-left: #535353 solid 1px;
+}
+
+nav.top > div:first-child {
+  border-left: none;
+}
+
+nav.top > * input {
+  width: 66px;
+}
+
+.filter:hover {
+  backdrop-filter: brightness(70%);
+}
+
+.center-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
