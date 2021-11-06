@@ -168,8 +168,8 @@ nav.top {
   margin: auto;
   position: absolute;
   top: 80px;
-  left: 0;
-  right: 0;
+  left: 16px;
+  right: 16px;
   color: white;
   font-weight: 300;
   font-size: 14px;
