@@ -62,11 +62,11 @@ footer .wrapper {
 
 footer * {
   font-size: 11px;
-  color: #6e6e6e;
+  color: hsl(0, 0%, 43%);
 }
 
 footer a {
-  color: #08c;
+  color: hsl(200, 100%, 40%);
   text-decoration: none;
 }
 
@@ -183,22 +183,20 @@ nav.top > div:first-child {
 
 nav.top > div:last-child {
   border-radius: 0 5px 5px 0;
-  /* border-right: #535353 solid 1px; */
 }
 
 nav.top > div {
-  box-shadow: inset 0 0 3px #aaa;
+  box-shadow: inset 0 0 3px hsl(0, 0%, 67%);
   background: linear-gradient(
-    #4a4a4a,
-    rgba(149, 140, 149, 1) 5%,
-    rgba(123, 123, 123, 1) 25%,
-    rgba(113, 113, 106, 1) 49%,
-    rgba(94, 94, 94, 1) 50%,
-    rgba(99, 99, 99, 1) 75%,
-    rgba(122, 122, 122, 1) 95%,
-    #4a4a4a
+    hsl(0, 0%, 29%),
+    hsla(300, 4%, 57%, 1) 5%,
+    hsla(0, 0%, 48%, 1) 25%,
+    hsla(60, 3%, 43%, 1) 49%,
+    hsla(0, 0%, 37%, 1) 50%,
+    hsla(0, 0%, 39%, 1) 75%,
+    hsla(0, 0%, 48%, 1) 95%,
+    hsl(0, 0%, 29%)
   );
-  backdrop-filter: brightness(0%);
 }
 
 nav.top div {
@@ -223,12 +221,52 @@ nav.top > div:first-child {
   border-left: none;
 }
 
-nav.top > * input {
-  width: 66px;
+div > div.input-wrapper {
+  background: hsla(0, 0%, 100%, 0.1);
+  border-radius: 12px;
+  box-shadow: rgb(0 0 0 / 60%) 0 2px 1px inset, rgb(255 255 255 / 20%) 0 1px 0;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  margin: 0 16px;
+  width: 106px;
+  transition: 0.25s;
+}
+
+nav.top > div:last-child {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  flex: 1;
+  border-radius: 12px;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+div > div.input-wrapper:hover {
+  background: white;
+  width: 150px;
+}
+
+div > div.input-wrapper:hover > svg {
+  fill: grey;
+}
+
+div > div.input-wrapper > svg {
+  height: 75%;
 }
 
 .filter:hover {
   backdrop-filter: brightness(70%);
+}
+
+.filter {
+  cursor: pointer;
 }
 
 .center-image {
