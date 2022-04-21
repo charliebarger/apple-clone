@@ -4,7 +4,7 @@
 
 Clone of an old apple site made with HTML and CSS
 
-> See it Live at [charliebarger.github.io/apple-clone/](charliebarger.github.io/apple-clone/)
+> See it Live at [https://charliebarger.github.io/apple-clone/](https://charliebarger.github.io/apple-clone/)
 
 ## Demo
 
